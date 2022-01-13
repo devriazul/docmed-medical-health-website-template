@@ -1,0 +1,346 @@
+/* Responsive CSS */
+/* applies to x-large devices (large desktops, less than 1400px) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+  .department.flex-2 {
+    gap: 22px;
+  }
+  .emergency-content {
+    width: 85%;
+  }
+}
+
+/* applies to large devices (desktops, less than 1200px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .department.flex-2 {
+    gap: 19px;
+  }
+  .emergency-content.flex-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner {
+    width: 55%;
+  }
+  .heading .sub-title {
+    width: 45%;
+  }
+  .testimonial .quotes {
+    width: 60%;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 15%;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 15%;
+  }
+  .tab-icon {
+    margin-top: 30px;
+  }
+}
+
+/* applies to medium devices (tablets, less than 992px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    padding-top: 30px;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+    transition: 0.3s;
+  }
+  .nav.active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  .nav-list.flex {
+    flex-direction: column;
+    width: 720px;
+    margin: 0 auto;
+  }
+  .nav-item {
+    display: block;
+    margin: 10px 25px;
+  }
+  .nav-item:last-child {
+    margin-bottom: 30px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
+  .appointment {
+    display: none;
+  }
+
+  .banner {
+    width: 70%;
+  }
+  .banner .banner-content h1 {
+    font-size: 62px;
+  }
+  .single-service {
+    padding: 30px 15px;
+  }
+  .welcome-area {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  .welcome-left {
+    width: 100%;
+    margin-bottom: 110px;
+  }
+  .welcome-thumb-2 {
+    top: 75px;
+    right: 0;
+  }
+  .welcome-right {
+    width: 100%;
+  }
+  .department-area.pt-100 {
+    padding-top: 60px;
+  }
+  .department-area.pb-100 {
+    padding-bottom: 60px;
+  }
+  .heading .sub-title {
+    width: 60%;
+  }
+  .department-box {
+    width: 48%;
+  }
+  .testimonial .quotes {
+    width: 85%;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 5%;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 5%;
+  }
+  .tab-area.pb-100,
+  .doctor-area.pb-100 {
+    padding-bottom: 50px;
+  }
+
+  .tab-button .buttons {
+    padding: 20px;
+    font-size: 17px;
+  }
+  .tab-pannel {
+    padding: 60px 0;
+  }
+  .tab-icon {
+    margin-top: 0px;
+  }
+  .emergency-contact.flex {
+    flex-direction: column;
+  }
+  .emergency-box-1,
+  .emergency-box-2 {
+    flex-basis: 100%;
+  }
+}
+
+/* applies to x-small devices */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .top-header .flex-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .top-header .top-header-left a {
+    font-size: 20px;
+  }
+  .top-header .top-header-right a {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  /* Nav -bar */
+
+  .nav {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    padding-top: 30px;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+    transition: 0.3s;
+  }
+  .nav.active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  .nav-list.flex {
+    flex-direction: column;
+  }
+  .nav-item {
+    display: block;
+    margin: 10px 25px;
+  }
+  .nav-item:last-child {
+    margin-bottom: 30px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
+
+  /* Nav -bar */
+  .appointment {
+    display: none;
+  }
+  .banner-area .single-banner {
+    height: 70vh;
+  }
+  .banner {
+    width: 100%;
+  }
+  .banner .banner-content h1 {
+    font-size: 31px;
+    line-height: 48px;
+  }
+  .service-area .flex-1,
+  .tab-button.flex-1 {
+    flex-direction: column;
+  }
+  .single-service {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .single-service--blue {
+    background: none;
+  }
+  .welcome-area {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .welcome-left,
+  .welcome-right,
+  .department-box,
+  .testimonial .quotes,
+  .tab-pannel-left,
+  .tab-pannel-right {
+    width: 100%;
+  }
+  .welcome-thumb-1 img {
+    width: 100%;
+  }
+  .welcome-thumb-2 {
+    display: none;
+  }
+  .welcome-right h2 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .welcome-right ul {
+    margin: 30px 0px;
+  }
+  .department-area.pt-100.pb-100 {
+    padding: 40px 0;
+  }
+  .heading .title,
+  .doctor-title h1 {
+    font-size: 30px;
+  }
+  .heading .sub-title {
+    width: 100%;
+  }
+  .department-text h2 {
+    font-size: 22px;
+  }
+  .department-text {
+    padding: 20px 15px;
+  }
+  .doctor-area.pb-100 {
+    padding-bottom: 45px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .single-testimonial {
+    padding: 50px 0;
+  }
+  .tab-area.pb-100 {
+    padding-bottom: 30px;
+  }
+  .tab-button .buttons {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  .tab-pannel {
+    padding: 50px 0;
+  }
+  .tab-icon {
+    margin-top: 0px;
+  }
+  .emergency-contact.flex {
+    flex-direction: column;
+  }
+  .emergency-content.flex-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .emergency-box-1,
+  .emergency-box-2 {
+    flex-basis: 100%;
+  }
+  .footer-top.pt-100.pb-100 {
+    padding: 60px 0;
+  }
+  .footer-author h3 {
+    font-size: 18px;
+  }
+}
+/* applies to small devices (landscape phones, less than 768px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .top-header .flex-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .top-header .top-header-left a {
+    font-size: 20px;
+  }
+  .top-header .top-header-right a {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .nav-list.flex {
+    flex-direction: column;
+    width: 540px;
+    margin: 0 auto;
+  }
+  .banner {
+    width: 60%;
+  }
+}
