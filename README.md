@@ -6,5 +6,5 @@
 - CSS3
 - JavaScript
 - Swiper JS
-  ![docmed](docmed.png)
+<!--   ![docmed](docmed.png) -->
 # docmed-medical-health-website-template
